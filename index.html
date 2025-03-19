@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Akshay Umesh</h1>
+      <p>Computer Science Student | AI Enthusiast</p>
+      <a href="#resume" class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/Akshay_photo.jpg" alt="Your Photo">
+      <p>
+        Hi, I’m Akshay Umesh, a passionate and results-driven AI enthusiast specializing in Deep Learning, Generative AI, and Software Development.
+        My expertise lies in Generative AI, Cross-Modal/Multimodal Modeling, Computer Vision, and Natural Language Processing. I have developed state-of-the-art models, including a 1.2B-parameter Latent Diffusion Transformer for high-resolution image synthesis. These projects have not only pushed the boundaries of AI but also demonstrated my ability to optimize training pipelines, reduce costs, and achieve cutting-edge results.
+        My academic background, combined with my professional experience, has equipped me with a unique blend of technical expertise and practical problem-solving skills.
+        When I’m not coding or training models, I enjoy staying updated with the latest advancements in AI. I’m always excited to collaborate on innovative projects and tackle new challenges in the world of technology.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="images/project-1.png" alt="Project 1">
+        <h3><a href="https://github.com/Akshay879/Sparse-Latent-Diffusion-Transformer" target="_blank">Micro-Budget Latent Diffusion Transformer for High-Resolution Image Synthesis</a></h3>
+        <p>Developed a 1.2B-parameter Latent Diffusion Transformer from scratch in PyTorch, achieving a state-of-the-art 12.7 FID score on the COCO dataset at a cost of $1,314. Engineered a progressive pretraining pipeline with dynamic positional embeddings and a lightweight PatchMixer, enabling efficient masked and unmasked denoising. Scaled training using Fully Sharded Data Parallel (FSDP) and Composer Hydra for optimal performance.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project-2.png" alt="Project 2">
+        <h3><a href="https://github.com/Akshay879/Transformer-based-autoregressive-image-generation-using-VQGAN" target="_blank">Transformer based Autoregressive Image generation using VQGAN</a></h3>
+        <p>Developed a generative model in PyTorch, combining VQGAN (108M params) for discrete neural representation learning and GPT-2 (91.5M params) for autoregressive image generation. Implemented a Vector Quantized VAE with adversarial training, multi-objective loss, and gradient flow reparameterization to learn a structured latent space. Trained on the Oxford Flowers dataset using BFloat16 mixed precision, achieving high-fidelity image synthesis.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project-3.png" alt="Project 3">
+        <h3><a href="https://github.com/Akshay879/Nanogpt" target="_blank">Foundation Model for Text Completion</a></h3>
+        <p>Developed a 124M-parameter GPT-2 model from scratch, trained on 10B tokens from the FineWebEdu dataset, achieving a validation loss of 3.1440 and HellaSwag score of 30.22%. Scaled training to 50B tokens, matching OpenAI-GPT3's performance, and optimized using PyTorch DDP, BFloat16 mixed precision, and flash attention on an 8x A100 cluster.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project-4.jpg" alt="Project 3">
+        <h3><a href="https://github.com/Akshay879/UNet-Autoencoder-Variant-with-Self-Attention" target="_blank">U-Net for Image Reconstruction</a></h3>
+        <p>Implemented a U-Net architecture in PyTorch with a 4-stage encoder-decoder structure, achieving 16x compression in latent space (256x256 → 16x16). Designed with self-attention, skip connections, and transposed convolutions for realistic RGB image generation. Optimized training using BFloat16 mixed precision, reducing memory usage by 50% and enabling larger batch sizes on A100 GPUs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>View my resume to learn more about my experience and skills.</p>
+    <p>
+        <a href="Akshay_Umesh_Resume.pdf" target="_blank" class="btn">View my resume</a>
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="devicon-python-plain colored"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-pytorch-plain colored"></i>
+        <p>PyTorch</p>
+      </div>
+      <div class="skill">
+        <img src="images/artificial-intelligence.png" alt="Generative AI" class="skill-icon">
+        <p>Generative AI</p>
+      </div>
+      <div class="skill">
+        <img src="images/nlp.png" alt="NLP" class="skill-icon">
+        <p>NLP</p>
+      </div>
+      <div class="skill">
+        <img src="images/vision.png" alt="Computer Vision" class="skill-icon">
+        <p>Computer Vision</p>
+      </div>
+      <div class="skill">
+        <img src="images/neural-network.png" alt="Computer Vision" class="skill-icon">
+        <p>Neural Networks</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-git-plain colored"></i>
+        <p>Git</p>
+      </div> 
+      <div class="skill">
+        <i class="devicon-java-plain colored"></i>
+        <p>Java</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-html5-plain colored"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-css3-plain colored"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-javascript-plain colored"></i>
+        <p>JavaScript</p>
+      </div>     
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
